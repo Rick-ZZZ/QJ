@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>学生请假-徐州工程学院</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .header {
             position: fixed;
@@ -14,9 +15,10 @@
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
             z-index: 999;
+            display: flex;
+            align-items: center;
         }
         .header .left-icon {
-            float: left;
             width: 30px;
             height: 30px;
             margin: 10px;
@@ -25,7 +27,6 @@
             background-size: 100% 100%;
         }
         .header .right-icon {
-            float: right;
             width: 30px;
             height: 30px;
             margin: 10px;
@@ -34,23 +35,22 @@
             background-size: 100% 100%;
         }
         .header h1 {
-            margin: 0;
-            padding: 0;
+            flex: 1;
             text-align: center;
-            line-height: 50px;
             font-size: 20px;
             font-weight: bold;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            line-height: 30px;
+            font-family: 黑体;
         }
-        @media only screen and (max-width: 480px) {
-            .header .left-icon,
-            .header .right-icon {
-                width: 20px;
-                height: 20px;
-                margin: 15px;
-            }
-            .header h1 {
-                font-size: 16px;
-            }
+        .header span {
+            font-size: 19px;
+            font-weight: bold;
+            color: #1E6EE7;
+            margin: 10px;
+            font-family: 黑体;
         }
     </style>
 </head>
@@ -59,7 +59,7 @@
         <div class="left-icon"></div>
         <h1>请假条</h1>
         <div class="right-icon"></div>
+        <span>销假</span>
     </div>
-
 </body>
 </html>
